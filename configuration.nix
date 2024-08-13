@@ -11,6 +11,8 @@
     cmatrix
     atuin
     ripgrep
+    
    ];
   
 }
+
