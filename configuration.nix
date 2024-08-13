@@ -5,13 +5,12 @@
   
    environment.systemPackages = with pkgs; [
     vim # adding vim editor
-
     htop # adding htop for monitoring
     neofetch
     bat
     cmatrix
-
-   ]
-;
+    atuin
+    ripgrep
+   ];
   
 }
