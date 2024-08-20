@@ -1,9 +1,13 @@
-{ modulesPath,pkgs, ... }: {
-  imports = [ "${modulesPath}/virtualisation/amazon-image.nix" ];
+{
+  modulesPath,
+  pkgs,
+  ...
+}: {
+  imports = ["${modulesPath}/virtualisation/amazon-image.nix"];
   ec2.efi = true;
-  system.stateVersion = "24.05";  # Set the appropriate version
-  
-   environment.systemPackages = with pkgs; [
+  system.stateVersion = "24.05"; # Set the appropriate version
+
+  environment.systemPackages = with pkgs; [
     vim # adding vim editor
     htop # adding htop for monitoring
     neofetch
@@ -11,8 +15,8 @@
     cmatrix
     atuin
     ripgrep
-    
-   ];
-  
+    neovim
+    git
+    alejandra
+  ];
 }
-
